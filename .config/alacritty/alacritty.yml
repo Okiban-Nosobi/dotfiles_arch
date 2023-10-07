@@ -1,0 +1,25 @@
+# shell
+
+shell: /usr/bin/zsh
+
+# import theme
+import:
+  - ~/.config/alacritty/themes/themes/tokyo-night.yaml
+
+# Window configuration
+window:
+  padding:
+    x: 10
+    y: 10
+  opacity: 0.95
+  decorations: "None"
+  decoration_theme_variant: "Dark"
+scrolling:
+  multiplier: 3  # default
+font:
+  size: 16
+  normal:
+    family: "CaskaydiaCoveNerdFontMono"
+terminal:
+  osc52: "CopyPaste"
+
