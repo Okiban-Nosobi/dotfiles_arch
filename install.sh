@@ -7,7 +7,7 @@ sudo pacman -Syu --noconfirm
 echo "installing tools..."
 
 # install stuffs
-sudo pacman -S i3-wm sddm alacritty neofetch rofi dunst polybar wget curl lsb-release networkmanager network-manager-applet less nm-connection-editor wireless_tools wpa_supplicant bluez bluez-utils plocate git base-devel man dosfstools feh picom vi zsh procs xclip lsd lxappearance thunar noto-fonts noto-fonts-emoji qt5-graphicaleffects qt5-quickcontrols2 qt5-svg cargo thefuck fd discord firefox xorg-xrandr neovim go timeshift ffmpeg yt-dlp ripgrep bat htop --noconfirm
+sudo pacman -S i3-wm sddm alacritty neofetch rofi dunst polybar wget curl lsb-release networkmanager network-manager-applet less nm-connection-editor wireless_tools wpa_supplicant bluez bluez-utils plocate git base-devel man dosfstools feh picom vi zsh procs xclip lsd lxappearance thunar noto-fonts noto-fonts-emoji qt5-graphicaleffects qt5-quickcontrols2 qt5-svg cargo thefuck fd discord firefox xorg-xrandr neovim go timeshift ffmpeg yt-dlp ripgrep bat htop ncdu dust jq --noconfirm
 sudo pacman -S --needed git base-devel --noconfirm && git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si && cd ..
 
 yay -S xcursor-breeze catppuccin-gtk-theme-mocha catppuccin-gtk-theme-macchiato brave-bin ttf-symbola snapd --noconfirm
