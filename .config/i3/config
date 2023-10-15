@@ -217,4 +217,6 @@ client.focused          #4c7899 #285577 #ffffff #ffdf00    #ffdf00
 # polybar
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
-# xrandr
+# alt tab handling
+bindsym $mod+Tab workspace next
+bindsym $mod+Shift+Tab workspace prev
