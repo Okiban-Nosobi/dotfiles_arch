@@ -76,7 +76,6 @@ cp $SCRIPT_PATH/zsh_config/okiban-nosobi.zsh-theme $HOME/.oh-my-zsh/themes
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 
-echo -n "\n\n\n"
 echo "do source $HOME/.zshrc"
 echo "Don't forget to adapt screen scaled and the title "headerText" in /usr/share/sddm/themes/sugar-candy/theme.conf"
 echo "select rofi theme with rofi-theme-selector"
