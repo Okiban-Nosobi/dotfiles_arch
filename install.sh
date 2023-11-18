@@ -10,21 +10,12 @@ echo "installing tools..."
 sudo pacman -S i3-wm sddm alacritty neofetch rofi dunst polybar wget curl lsb-release networkmanager network-manager-applet less nm-connection-editor wireless_tools wpa_supplicant bluez bluez-utils plocate git base-devel man dosfstools feh picom vi zsh procs xclip lsd lxappearance thunar noto-fonts noto-fonts-emoji noto-fonts-cjk qt5-graphicaleffects qt5-quickcontrols2 qt5-svg cargo thefuck fd discord firefox xorg-xrandr neovim go timeshift ffmpeg yt-dlp ripgrep bat htop ncdu dust jq python python-pipx arandr autorandr pavucontrol --noconfirm
 sudo pacman -S --needed git base-devel --noconfirm && git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si && cd ..
 
-yay -S xcursor-breeze catppuccin-gtk-theme-mocha catppuccin-gtk-theme-macchiato brave-bin ttf-symbola snapd --noconfirm
-    
-# no idea why it has been installed 
+yay -S xcursor-breeze catppuccin-gtk-theme-mocha catppuccin-gtk-theme-macchiato brave-bin ttf-symbola visual-studio-code-bin spotify  --noconfirm
+
+# no idea why it has been installed
 sudo pacman -R fontforge
 
-# enable snap package manager
-sudo systemctl enable snapd
-sudo systemctl start snapd
-
-echo "Installing spotify and stuff using snap"
-sudo ln -s /var/lib/snapd/snap /snap
-sudo snap install spotify steam 
-sudo snap install code --classic
-
-# enable sddm 
+# enable sddm
 sudo systemctl enable sddm
 
 # setup theme
@@ -37,7 +28,7 @@ sudo cp -r $SCRIPT_PATH/sddm/sugar-candy /usr/share/sddm/themes
 echo "Backuping current config"
 
 if ! [ -d $HOME/.config ]; then
-   cp -r -p $HOME/.config $HOME/.config.bak
+    cp -r -p $HOME/.config $HOME/.config.bak
 fi
 
 # ALACRITTY
@@ -81,6 +72,7 @@ echo "Don't forget to adapt screen scaled and the title "headerText" in /usr/sha
 echo "select rofi theme with rofi-theme-selector"
 echo "select widget theme, cursor, ... with lxappearance"
 echo "select Catpuccin-Macchiato-Standard-Lavender-dark, breeze dark, breeze cursor"
+echo "install steam"
 
 sleep 10
 reboot
