@@ -195,9 +195,6 @@ bindsym $mod+shift+x exec --no-startup-id i3lock
 # set display config
 exec_always --no-startup-id autorandr -c
 
-# set wallpaper
-exec_always --no-startup-id feh --bg-scale /usr/share/backgrounds/current_wallpaper.jpg
-
 # turn on transparency
 exec_always --no-startup-id picom
 
