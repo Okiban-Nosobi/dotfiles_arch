@@ -7,10 +7,13 @@ sudo pacman -Syu --noconfirm
 echo "installing tools..."
 
 # install stuffs
-sudo pacman -S i3-wm sddm alacritty neofetch rofi dunst polybar wget curl lsb-release networkmanager network-manager-applet less nm-connection-editor wireless_tools wpa_supplicant bluez bluez-utils plocate git base-devel man dosfstools picom vi zsh procs xclip lsd lxappearance thunar noto-fonts noto-fonts-emoji noto-fonts-cjk qt5-graphicaleffects qt5-quickcontrols2 qt5-svg cargo thefuck fd discord firefox xorg-xrandr neovim go timeshift ffmpeg yt-dlp ripgrep bat htop ncdu dust jq python python-pipx arandr autorandr pavucontrol fzf lazygit docker virt-manager --noconfirm
+sudo pacman -S i3-wm sddm alacritty neofetch rofi dunst polybar wget curl lsb-release networkmanager network-manager-applet less nm-connection-editor wireless_tools wpa_supplicant bluez bluez-utils plocate git base-devel man dosfstools picom vi zsh procs xclip lsd lxappearance thunar noto-fonts noto-fonts-emoji noto-fonts-cjk qt5-graphicaleffects qt5-quickcontrols2 qt5-svg cargo thefuck fd discord firefox xorg-xrandr neovim go timeshift ffmpeg yt-dlp ripgrep bat htop ncdu dust jq python python-pipx arandr autorandr pavucontrol fzf lazygit docker virt-manager vlc ffmpeg yt-dlp --noconfirm
+
 sudo pacman -S --needed git base-devel --noconfirm && git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si && cd ..
 
-yay -S xcursor-breeze catppuccin-gtk-theme-mocha catppuccin-gtk-theme-macchiato brave-bin ttf-symbola visual-studio-code-bin spotify lazydocker paru pacseek --noconfirm
+yay -S xcursor-breeze catppuccin-gtk-theme-mocha catppuccin-gtk-theme-macchiato brave-bin ttf-symbola visual-studio-code-bin spotify lazydocker paru pacseek spotdl --noconfirm
+
+pipx install yewtube
 
 # no idea why it has been installed
 sudo pacman -R fontforge
