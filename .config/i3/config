@@ -220,3 +220,6 @@ exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 # alt tab handling
 bindsym $mod+Tab workspace next
 bindsym $mod+Shift+Tab workspace prev
+
+# Bind flameshot on print screen
+bindsym Print exec --no-startup-id flameshot gui
