@@ -218,8 +218,8 @@ client.focused          #f1c41e #285577 #ffffff #f1c41e    #f1c41e
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
 # alt tab handling
-bindsym $mod+Tab workspace next
-bindsym $mod+Shift+Tab workspace prev
+bindsym $mod+Tab workspace back_and_forth
+bindsym $mod+Shift+Tab workspace next
 
 # Bind flameshot on print screen
 bindsym Print exec --no-startup-id flameshot gui
