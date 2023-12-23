@@ -56,6 +56,9 @@ echo "Installing picom..."
 sudo mkdir -p /usr/share/backgrounds/
 sudo cp $SCRIPT_PATH/picom.conf /etc/xdg/picom.conf
 
+echo "Installing wallpapers"
+sudo cp $SCRIPT_PATH/wallpapers/current_wallpaper.jpg /usr/share/backgrounds
+
 # Install oh-my-zsh
 echo "Installing omz..."
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
