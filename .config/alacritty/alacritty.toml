@@ -1,5 +1,5 @@
 # import theme
-import = ["~/.config/alacritty/themes/themes/tokyo-night.yaml"]
+import = ["~/.config/alacritty/themes/themes/tokyo-night.toml"]
 # shell
 shell = "/usr/bin/zsh"
 
