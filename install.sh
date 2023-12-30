@@ -34,10 +34,8 @@ if ! [ -d $HOME/.config ]; then
     cp -r -p $HOME/.config $HOME/.config.bak
 fi
 
-# ALACRITTY
 echo "Installing configs/themes..."
 cp -r $SCRIPT_PATH/.config $HOME
-
 
 # Install font
 echo "Installing font..."
