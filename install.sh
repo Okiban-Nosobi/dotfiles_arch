@@ -38,8 +38,6 @@ fi
 echo "Installing configs/themes..."
 cp -r $SCRIPT_PATH/.config $HOME
 
-mkdir -p $HOME/.config/alacritty/themes
-git clone https://github.com/alacritty/alacritty-theme $HOME/.config/alacritty/themes
 
 # Install font
 echo "Installing font..."
