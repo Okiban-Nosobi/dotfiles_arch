@@ -125,29 +125,29 @@ set $ws8 "8"
 set $ws9 "9"
 set $ws10 "10"
 # define keys &é"'(-è_çà
-set $key1 "ampersand"
-set $key2 "eacute"
-set $key3 "quotedbl"
-set $key4 "apostrophe"
-set $key5 "parenleft"
-set $key6 "minus"
-set $key7 "egrave"
-set $key8 "underscore"
-set $key9 "ccedilla"
-set $key0 "agrave"
+set $key1 ampersand
+set $key2 eacute
+set $key3 quotedbl
+set $key4 apostrophe
+set $key5 parenleft
+set $key6 minus
+set $key7 egrave
+set $key8 underscore
+set $key9 ccedilla
+set $key0 agrave
 
 
 # Switch to workspace
-bindsym $mod+$key1 workspace number $ws1
-bindsym $mod+$key2 workspace number $ws2
-bindsym $mod+$key3 workspace number $ws3
-bindsym $mod+$key4 workspace number $ws4
-bindsym $mod+$key5 workspace number $ws5
-bindsym $mod+$key6 workspace number $ws6
-bindsym $mod+$key7 workspace number $ws7
-bindsym $mod+$key8 workspace number $ws8
-bindsym $mod+$key9 workspace number $ws9
-bindsym $mod+$key0 workspace number $ws10
+bindsym $mod+ampersand workspace number $ws1
+bindsym $mod+eacute workspace number $ws2
+bindsym $mod+quotedbl workspace number $ws3
+bindsym $mod+apostrophe workspace number $ws4
+bindsym $mod+parenleft workspace number $ws5
+bindsym $mod+minus workspace number $ws6
+bindsym $mod+egrave workspace number $ws7
+bindsym $mod+underscore workspace number $ws8
+bindsym $mod+ccedilla workspace number $ws9
+bindsym $mod+agrave workspace number $ws10
 
 # Move focused container to workspace
 bindsym $mod+Shift+$key1 move container to workspace number $ws1
