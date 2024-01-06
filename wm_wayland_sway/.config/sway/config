@@ -138,16 +138,16 @@ set $key0 agrave
 
 
 # Switch to workspace
-bindsym $mod+ampersand workspace number $ws1
-bindsym $mod+eacute workspace number $ws2
-bindsym $mod+quotedbl workspace number $ws3
-bindsym $mod+apostrophe workspace number $ws4
-bindsym $mod+parenleft workspace number $ws5
-bindsym $mod+minus workspace number $ws6
-bindsym $mod+egrave workspace number $ws7
-bindsym $mod+underscore workspace number $ws8
-bindsym $mod+ccedilla workspace number $ws9
-bindsym $mod+agrave workspace number $ws10
+bindsym $mod+$key1 workspace number $ws1
+bindsym $mod+$key2 workspace number $ws2
+bindsym $mod+$key3 workspace number $ws3
+bindsym $mod+$key4 workspace number $ws4
+bindsym $mod+$key5 workspace number $ws5
+bindsym $mod+$key6 workspace number $ws6
+bindsym $mod+$key7 workspace number $ws7
+bindsym $mod+$key8 workspace number $ws8
+bindsym $mod+$key9 workspace number $ws9
+bindsym $mod+$key0 workspace number $ws10
 
 # Move focused container to workspace
 bindsym $mod+Shift+$key1 move container to workspace number $ws1
@@ -194,11 +194,11 @@ bindsym $mod+q focus parent
 # You can send windows there and get them back later.
 
 # Move the currently focused window to the scratchpad
-bindsym $mod+Shift+minus move scratchpad
+bindsym $mod+$win+Shift+minus move scratchpad
 
 # Show the next scratchpad window or hide the focused scratchpad window.
 # If there are multiple scratchpad windows, this command cycles through them.
-bindsym $mod+minus scratchpad show
+bindsym $mod+$win+minus scratchpad show
 #
 # Resizing containers:
 #
