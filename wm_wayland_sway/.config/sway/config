@@ -69,7 +69,7 @@ before-sleep 'swaylock -f -c 000000'
 input * {
     xkb_layout "fr"
     xkb_variant "us"
-    xkb_options "grp:ralt_rshift_toggle"
+    xkb_options "grp:rctrl_rshift_toggle"
 }
 
 
