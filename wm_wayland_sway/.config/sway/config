@@ -68,8 +68,6 @@ before-sleep 'swaylock -f -c 000000'
 
 input type:keyboard {
     xkb_layout "fr"
-    xkb_variant "colemak,,typewriter"
-    xkb_options "grp:rctrl_rshift_toggle"
 }
 
 
@@ -84,7 +82,7 @@ bindsym $mod+Return exec $term
 bindsym $mod+Shift+a kill
 
 # Start your launcher
-bindsym $mod+d exec $menu
+bindsym $mod+c exec $menu
 
 # Drag floating windows by holding down $mod and left mouse button.
 # Resize them with right mouse button + $mod.
