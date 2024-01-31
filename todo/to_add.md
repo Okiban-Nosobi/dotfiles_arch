@@ -22,3 +22,7 @@ recup la config pacman
 
 betterlockscreen
 ` betterlockscreen -u /usr/share/backgrounds/ --display 1`
+
+# sound
+easy effects + calf + lsp-plugins
+https://github.com/p-chan5/EasyPulse
