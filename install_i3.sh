@@ -11,7 +11,7 @@ sudo pacman -S i3-wm sddm kitty neofetch rofi dunst polybar wget curl lsb-releas
 
 sudo pacman -S --needed git base-devel --noconfirm && git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si && cd ..
 
-yay -S xcursor-breeze catppuccin-gtk-theme-mocha catppuccin-gtk-theme-macchiato brave-bin ttf-symbola visual-studio-code-bin spotify lazydocker paru pacseek spotdl alttab --noconfirm
+yay -S xcursor-breeze catppuccin-gtk-theme-mocha catppuccin-gtk-theme-macchiato brave-bin ttf-symbola visual-studio-code-bin spotify lazydocker paru pacseek spotdl --noconfirm
 
 pipx install yewtube
 
