@@ -227,7 +227,6 @@ exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 # alt tab handling
 #bindsym $mod+Tab workspace back_and_forth
 #bindsym $mod+Shift+Tab workspace next
-exec_always --no-startup-id alttab -d 1 -frame "#f1c41e" -t 160x150 -i 160x64
 
 # Bind flameshot on print screen
 bindsym Print exec --no-startup-id flameshot gui
@@ -237,4 +236,6 @@ bindsym $mod+Print --release exec --no-startup-id flameshot screen
 exec --no-startup-id volumeicon
 exec --no-startup-id redshift -c $HOME/.config/redshift/redshift.conf
 
+exec --no-startup-id easyeffects --gapplication-service
 
+exec --no-startup-id xmousepasteblock
