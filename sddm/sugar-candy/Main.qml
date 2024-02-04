@@ -40,7 +40,8 @@ Pane {
     palette.window: config.BackgroundColor
 
     font.family: config.Font
-    font.pointSize: config.FontSize !== "" ? config.FontSize : parseInt(height / 80)
+//    font.pointSize: config.FontSize !== "" ? config.FontSize : parseInt(height / 80)
+    font.pointSize: 14
     focus: true
 
     property bool leftleft: config.HaveFormBackground == "true" &&

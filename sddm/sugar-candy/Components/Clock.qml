@@ -29,7 +29,8 @@ Column {
    
     Text {
   	anchors.horizontalCenter: parent.horizontalCenter
-        font.pointSize: config.HeaderText !=="" ? root.font.pointSize * 3 : 0
+	//        font.pointSize: config.HeaderText !=="" ? root.font.pointSize * 3 : 0
+	font.pointSize: 42
 	color: root.palette.text
 	renderType: Text.QtRendering
      	text: config.HeaderText  
@@ -38,7 +39,8 @@ Column {
     Label {
         id: timeLabel
         anchors.horizontalCenter: parent.horizontalCenter
-        font.pointSize: root.font.pointSize * 3
+	//        font.pointSize: root.font.pointSize * 3
+	font.pointSize: 42
         color: root.palette.text
 	renderType: Text.QtRendering
         function updateTime() {
