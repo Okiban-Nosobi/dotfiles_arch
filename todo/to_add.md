@@ -29,3 +29,7 @@ https://github.com/p-chan5/EasyPulse
 
 
 yay -S xfce4 xfce4-goodies
+
+xmousepasteblock
+
+playerctl
