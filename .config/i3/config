@@ -240,6 +240,7 @@ exec --no-startup-id easyeffects --gapplication-service
 
 exec --no-startup-id xmousepasteblock
 
+exec_always --no-startup-id imwheel --kill -b "45"
 
 # Mapping macro keys razer 
 # M1 = XF86Tools

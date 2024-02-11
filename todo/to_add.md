@@ -33,3 +33,5 @@ yay -S xfce4 xfce4-goodies
 xmousepasteblock
 
 playerctl
+
+copy 70-synaptics.conf => /etc/X11/xorg.conf.d/
