@@ -35,3 +35,7 @@ xmousepasteblock
 playerctl
 
 copy 70-synaptics.conf => /etc/X11/xorg.conf.d/
+
+# utils scripts
+
+batterie alerte
