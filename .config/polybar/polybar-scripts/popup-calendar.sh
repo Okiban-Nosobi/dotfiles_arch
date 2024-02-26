@@ -1,8 +1,8 @@
 #!/bin/sh
 
-BAR_HEIGHT=50  # polybar height
+BAR_HEIGHT=22  # polybar height
 BORDER_SIZE=1  # border size from your wm settings
-YAD_WIDTH=450  # 222 is minimum possible value
+YAD_WIDTH=250  # 222 is minimum possible value
 YAD_HEIGHT=193 # 193 is minimum possible value
 DATE="$(date +"%d/%m/%Y %X")"
 
