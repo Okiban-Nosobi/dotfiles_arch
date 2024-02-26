@@ -22,14 +22,14 @@ font pango:monospace 8
 
 # Start XDG autostart .desktop files using dex. See also
 # https://wiki.archlinux.org/index.php/XDG_Autostart
-exec --no-startup-id dex --autostart --environment i3
+#exec --no-startup-id dex --autostart --environment i3
 
 # The combination of xss-lock, nm-applet and pactl is a popular choice, so
 # they are included here as an example. Modify as you see fit.
 
 # xss-lock grabs a logind suspend inhibit lock and will use i3lock to lock the
 # screen before suspend. Use loginctl lock-session to lock your screen.
-exec --no-startup-id xss-lock --transfer-sleep-lock -- betterlockscreen
+#exec --no-startup-id xss-lock --transfer-sleep-lock -- betterlockscreen
 
 
 
@@ -216,6 +216,10 @@ for_window [class="Brave"] move to workspace $ws3
 for_window [class="firefox"] move to workspace $ws3
 for_window [class="Bitwarden"] move to workspace $ws4
 for_window [class="KeePassXC"] move to workspace $ws4
+
+# Set floating by default for those windows
+for_window [class="Yad" title="yad-calendar"] floating enable
+
 
 # class                 border  backgr. text    indicator child_border
 client.focused          #f1c41e #285577 #ffffff #f1c41e    #f1c41e
