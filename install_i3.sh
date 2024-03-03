@@ -7,11 +7,11 @@ sudo pacman -Syu --noconfirm
 echo "installing tools..."
 
 # install stuffs
-sudo pacman -S i3-wm sddm kitty neofetch rofi dunst polybar wget curl lsb-release networkmanager network-manager-applet less nm-connection-editor wireless_tools wpa_supplicant bluez bluez-utils plocate git base-devel man dosfstools picom vi zsh procs xclip lsd lxappearance thunar noto-fonts noto-fonts-emoji noto-fonts-cjk qt5-graphicaleffects qt5-quickcontrols2 qt5-svg cargo thefuck fd discord firefox xorg-xrandr neovim go timeshift ffmpeg yt-dlp ripgrep bat htop ncdu dust jq python python-pipx arandr autorandr pavucontrol fzf lazygit docker virt-manager vlc ffmpeg yt-dlp flameshot feh obsidian yad xdotool --noconfirm
+sudo pacman -S i3-wm sddm kitty neofetch rofi dunst polybar wget curl lsb-release networkmanager network-manager-applet less nm-connection-editor wireless_tools wpa_supplicant bluez bluez-utils plocate git base-devel man dosfstools picom vi zsh procs xclip lsd lxappearance thunar noto-fonts noto-fonts-emoji noto-fonts-cjk qt5-graphicaleffects qt5-quickcontrols2 qt5-svg cargo thefuck fd discord firefox xorg-xrandr neovim go timeshift ffmpeg yt-dlp ripgrep bat htop ncdu dust jq python python-pipx arandr autorandr pavucontrol fzf lazygit docker virt-manager vlc ffmpeg yt-dlp flameshot feh obsidian yad xdotool volumeicon smbclient gthumb easyeffects calf lsp-plugins --noconfirm
 
 sudo pacman -S --needed git base-devel --noconfirm && git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si && cd ..
 
-yay -S xcursor-breeze catppuccin-gtk-theme-mocha catppuccin-gtk-theme-macchiato brave-bin ttf-symbola visual-studio-code-bin spotify lazydocker paru pacseek spotdl --noconfirm
+yay -S xcursor-breeze catppuccin-gtk-theme-mocha catppuccin-gtk-theme-macchiato brave-bin ttf-symbola visual-studio-code-bin spotify lazydocker paru pacseek spotdl proton-vpn-gtk-app betterlockscreen polychromatic xfce4 xfce4-goodies xmousepasteblock playerctl jmtpfs --noconfirm
 
 pipx install yewtube
 
@@ -55,6 +55,8 @@ sudo cp $SCRIPT_PATH/picom.conf /etc/xdg/picom.conf
 echo "Installing wallpapers"
 sudo cp $SCRIPT_PATH/wallpapers/current_wallpaper.jpg /usr/share/backgrounds
 
+echo "Building betterlockscreen cache"
+
 # Install oh-my-zsh
 echo "Installing omz..."
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
@@ -65,11 +67,15 @@ cp $SCRIPT_PATH/zsh_config/okiban-nosobi.zsh-theme $HOME/.oh-my-zsh/themes
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 
-echo "Don't forget to adapt screen scaled and the title "headerText" in /usr/share/sddm/themes/sugar-candy/theme.conf"
+echo "Removing useless desktop files for rofi"
+cd /usr/share/applications/
+sudo find . -name "in.lsp_plug.*" -exec mv {} {}.old \;
+
+echo "Don't forget to adapt screen scaled and the title \"headerText\" in /usr/share/sddm/themes/sugar-candy/theme.conf"
 echo "select rofi theme with rofi-theme-selector"
 echo "select widget theme, cursor, ... with lxappearance"
 echo "select Catpuccin-Macchiato-Standard-Lavender-dark, breeze dark, breeze cursor"
 echo "install steam"
-
+echo "run 'betterlockscreen -u /usr/share/backgrounds/ --display 1' to update betterlockscreen cache"
 sleep 10
 reboot
