@@ -9,7 +9,7 @@ font pango:monospace 8
 # and nm-applet is a desktop environment-independent system tray GUI for it.
 exec --no-startup-id nm-applet
 
-exec --no-startup-id xfce4-power-manager
+exec --no-startup-id xfce4-power-manager --daemonprop
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
@@ -177,6 +177,7 @@ for_window [class="KeePassXC"] move to workspace $ws4
 for_window [class="Yad" title="yad-calendar"] floating enable
 for_window [class="steam_app_311210"] floating enable
 for_window [class="Protonvpn-app" title="Proton VPN"] floating enable
+for_window [class="gnome-calculator"] floating enable
 
 # class                 border  backgr. text    indicator child_border
 client.focused          #f1c41e #285577 #ffffff #f1c41e    #f1c41e
