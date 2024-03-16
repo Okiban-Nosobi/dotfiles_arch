@@ -1,7 +1,7 @@
 {
     "output": {
         "autogain#0": {
-            "bypass": false,
+            "bypass": true,
             "input-gain": -2.8,
             "maximum-history": 15,
             "output-gain": -3.3,
@@ -20,7 +20,10 @@
             "output-gain": 0.0,
             "scope": 233.0
         },
-        "blocklist": [],
+        "blocklist": [
+            "BlackOps3.exe",
+            "WEBRTC VoiceEngine"
+        ],
         "compressor#0": {
             "attack": 0.0,
             "boost-amount": 6.0,
@@ -291,7 +294,7 @@
             "bypass": true
         },
         "limiter#0": {
-            "alr": true,
+            "alr": false,
             "alr-attack": 0.1,
             "alr-knee": 10.0,
             "alr-release": 1000.0,
