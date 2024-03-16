@@ -12,8 +12,8 @@ gap_size = 1
 frame_color = "#89B4FA"
 separator_color = frame
 
-font = CaskaydiaCoveNerdFontMono 24
-timeout = 0
+font = CaskaydiaCoveNerdFontMono 18
+timeout = 5
 
 show_indicators = false
 
