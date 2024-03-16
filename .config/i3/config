@@ -192,7 +192,7 @@ bindsym $mod+Print --release exec --no-startup-id flameshot screen
 
 # volume icon system tray
 exec --no-startup-id volumeicon
-exec --no-startup-id redshift -c $HOME/.config/redshift/redshift.conf
+#exec --no-startup-id redshift -c $HOME/.config/redshift/redshift.conf
 
 exec --no-startup-id easyeffects --gapplication-service
 
