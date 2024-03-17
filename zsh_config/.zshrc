@@ -104,6 +104,11 @@ if [ -f ~/.bash_aliases ]; then
 	. ~/.bash_aliases
 fi
 
-PATH=$PATH:"$HOME/.cargo/bin"
+export PATH=$PATH:"$HOME/.cargo/bin:$HOME/.local/bin"
 
 eval $(thefuck --alias)
+
+
+
+# auto completion for pipx
+eval "$(register-python-argcomplete pipx)"
