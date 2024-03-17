@@ -79,5 +79,7 @@ echo "select Catpuccin-Macchiato-Standard-Lavender-dark, breeze dark, breeze cur
 echo "install steam"
 echo "run 'betterlockscreen -u /usr/share/backgrounds/ --display 1' to update betterlockscreen cache"
 echo "enable redshift with systemctl --user enable redshift"
+
+echo "for docker on arch with btrfs see https://github.com/egara/arch-btrfs-installation"
 sleep 10
 reboot
