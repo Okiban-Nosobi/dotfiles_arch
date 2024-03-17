@@ -108,7 +108,7 @@ export PATH=$PATH:"$HOME/.cargo/bin:$HOME/.local/bin"
 
 eval $(thefuck --alias)
 
-
-
 # auto completion for pipx
-eval "$(register-python-argcomplete pipx)"
+source $HOME/.zsh_autocomplete
+
+
